@@ -166,6 +166,9 @@ border-bottom: 1px solid #ECECEC;
     padding-bottom: 200px;
     text-align: center;
     background-color: #2F303A;
+    background-image: url(/images/logo.jpg);
+    max-width: 1600px;
+    max-height: 600px
 }
 .main-title {
     margin-top: 0;
