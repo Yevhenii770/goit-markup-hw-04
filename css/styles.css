@@ -112,9 +112,10 @@ border-bottom: 1px solid #ECECEC;
 }
 .mail {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: baseline;
+    align-items: center;
     gap: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .telephone{
     text-decoration: none;
@@ -166,9 +167,12 @@ border-bottom: 1px solid #ECECEC;
     padding-bottom: 200px;
     text-align: center;
     background-color: #2F303A;
-    background-image: url(/images/logo.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/logo.jpg);
     max-width: 1600px;
-    max-height: 600px
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-title {
     margin-top: 0;
@@ -232,8 +236,16 @@ border-bottom: 1px solid #ECECEC;
     padding-bottom: 94px;
 }
 .benefits-icon {
-    margin-bottom: 30px;
     background-color:#F5F4FA;
+}
+.plus {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    background-color: var(--bgc-teams);
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 30px;
 }
 /* Чим мы займаємося */
 .section {
@@ -324,7 +336,7 @@ justify-content: center;
 /* Постоянные клиенты */
 .section-clients {
     padding-top: 94px;
-    margin-bottom: 79px;
+    padding-bottom: 79px;
 }
 
 
@@ -356,10 +368,12 @@ justify-content: center;
 
 .company-icon {
     fill: #AFB1B8;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 32px;
-    margin-right: 32px;
+}
+.company-link:hover,
+.company-link:focus {
+    color: var(--accent-color);
+    border-color:var(--accent-color);
+    
 }
 /* Подвал */ 
 .footer-container {
