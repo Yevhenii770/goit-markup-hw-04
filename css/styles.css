@@ -46,8 +46,6 @@ body {
 .header {
     border: 1px solid #ECECEC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 .header-container {
     display: flex;
@@ -349,31 +347,32 @@ gap: 30px;
 }
 .company-item {
    
-border: 1px solid #AFB1B8;
-border-radius: 4px;
+
 }
 
 .company-link {
     width: 170px;
-        height: 92px;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.company-item:hover,
-.company-item:focus {
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 
 .company-icon {
     fill: #AFB1B8;
 }
+
+/* Выбирает элемент COMPANY-ICON и применяет к нему ховер и фокус при наведении на линк! */
+.company-link:hover .company-icon,
+.company-link:focus .company-icon {
+    fill: var(--accent-color);
+}
+/* Меняет цвет при ховере и фокусе ссылки */
 .company-link:hover,
 .company-link:focus {
-    color: var(--accent-color);
-    border-color:var(--accent-color);
-    
+    border: 1px solid var(--accent-color);
 }
 /* Подвал */ 
 .footer-container {
