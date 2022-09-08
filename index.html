@@ -48,7 +48,7 @@
           <li class="list-item">
             
 
-            <a class="telephone mail" href="tel:+380961111111"> <svg class="contacts-smartphone" width="16px" height="12px">
+            <a class="telephone mail" href="tel:+380961111111"> <svg class="contacts-smartphone" width="10px" height="16px">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>+38096 111 11 11
               
@@ -64,7 +64,7 @@
 
       <section class="main">
         <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="btn" type="button" value="">Замовити послугу</button>
+        <button class="btn" type="button" value=""data-modal-open>Замовити послугу</button>
       </section>
 
       <!--Описание-->
@@ -611,5 +611,19 @@
       </div>
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button"
+        data-modal-close>
+          <svg class="Modal-window" width="16" height="16">
+            <use href="./images/icons.svg#icon-exit">
+
+            </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
